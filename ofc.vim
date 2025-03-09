@@ -1,4 +1,3 @@
-" Plugin para generar headers y definiciones de clases en C++ (Orthodox Canonical Form)
 let s:length = 80
 let s:margin = 5
 
@@ -35,25 +34,21 @@ function! s:insert_cpp()
 	let l:classname = substitute(expand("%:t"), '\..*$', '', '')
 	let l:header = substitute(expand("%:t"), '\.cpp$', '.hpp', '')
 
-	" Incluir la cabecera
 	call append(12, "")
 	call append(13, '#include "' . l:header . '.hpp"')
 	call append(14, "")
 
-	" Constructor
 	call append(15, l:classname . "::" . l:classname . "() {")
 	call append(16, "	// Constructor por defecto")
 	call append(17, "}")
 	call append(18, "")
 
-	" Constructor de copia
 	call append(19, l:classname . "::" . l:classname . "(const " . l:classname . " &other) {")
 	call append(20, "	// Constructor de copia")
 	call append(21, "	*this = other;")
 	call append(22, "}")
 	call append(23, "")
 
-	" Operador de asignación
 	call append(24, l:classname . "& " . l:classname . "::operator=(const " . l:classname . " &other) {")
 	call append(25, "	// Operador de asignación")
 	call append(26, "	if (this != &other) {")
@@ -63,7 +58,6 @@ function! s:insert_cpp()
 	call append(30, "}")
 	call append(31, "")
 
-	" Destructor
 	call append(32, l:classname . "::~" . l:classname . "() {")
 	call append(33, "	// Destructor")
 	call append(34, "}")
@@ -82,6 +76,5 @@ function! OcfHeader()
 	endif
 endfunction
 
-" Crear el comando y el atajo de teclado
 command! OcfHeader call OcfHeader()
 map <F2> :OcfHeader<CR>
