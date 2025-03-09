@@ -1,6 +1,6 @@
 # Vim Header Generator (Modified)
 
-Este es un plugin de Vim basado en el trabajo original de [gicamerl](https://42.fr).  
+Este es un plugin de Vim basado en el trabajo original de [gicamerl](https://42.fr).
 Se ha modificado para generar archivos `.hpp` y `.cpp` con la Orthodox Canonical Form en C++.
 
 ## 🚀 Características
@@ -14,22 +14,22 @@ Para instalar el plugin, copia el archivo **`ocf_header.vim`** en la carpeta de 
 
 ```bash
 mkdir -p ~/.vim/plugin
-cp ocf_header.vim ~/.vim/plugin/
+cp ocf.vim ~/.vim/plugin/
 ```
 
 Para **Neovim**, colócalo en:
 ```bash
 mkdir -p ~/.config/nvim/plugin
-cp ocf_header.vim ~/.config/nvim/plugin/
+cp ocf.vim ~/.config/nvim/plugin/
 ```
 
 ## 🖥️ Uso
 Puedes ejecutar el plugin de dos maneras:
 
-1. **Atajo de teclado**:  
-   - Pulsa **`fd`** en modo normal para generar automáticamente el header y la clase en archivos `.hpp` o la implementación en `.cpp`.
+1. **Atajo de teclado**:
+   - Pulsa **`f2`** en modo normal para generar automáticamente el header y la clase en archivos `.hpp` o la implementación en `.cpp`.
 
-2. **Comando manual**:  
+2. **Comando manual**:
    - Escribe `:OcfHeader` y presiona `Enter`.
 
 ### 📌 Ejemplo en `.hpp`
@@ -103,7 +103,7 @@ WrongCat::~WrongCat() {
 ```
 
 ## 📝 Licencia
-Este código es una modificación de un trabajo originalmente publicado por gicamerl bajo dominio público.  
+Este código es una modificación de un trabajo originalmente publicado por gicamerl bajo dominio público.
 Puedes usarlo, modificarlo y distribuirlo libremente.
 
 ## ✨ Contribuciones
