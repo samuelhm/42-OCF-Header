@@ -103,7 +103,7 @@ WrongCat::~WrongCat() {
 ```
 
 ## 📝 Licencia
-Este código es una modificación de un trabajo originalmente publicado por gicamerl bajo dominio público.
+Este código es una modificación de un trabajo originalmente publicado por 42 bajo dominio público.
 Puedes usarlo, modificarlo y distribuirlo libremente.
 
 ## ✨ Contribuciones
