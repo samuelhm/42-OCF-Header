@@ -177,7 +177,7 @@ function! s:insert_cpp()
 	let l:header = substitute(expand("%:t"), '\.cpp$', '.hpp', '')
 
 	call append(12, "")
-	call append(13, '#include "' . l:header . '.hpp"')
+	call append(13, '#include "' . l:header . '"')
 	call append(14, "")
 
 	call append(15, l:classname . "::" . l:classname . "() {")
